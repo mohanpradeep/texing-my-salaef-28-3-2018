@@ -8,6 +8,7 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 import { RecipeDetialComponent } from './recipe/recipe-detial/recipe-detial.component';
+import { RecipeSService } from './recipe/recipe-s.service';
 
 const appRoutes: Routes = [
   { path: '', component: RecipeComponent },
@@ -25,7 +26,7 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [RecipeSService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

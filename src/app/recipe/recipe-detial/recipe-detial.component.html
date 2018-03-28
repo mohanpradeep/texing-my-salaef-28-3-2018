@@ -1,5 +1,7 @@
 <div calss="col-md-12">
+  <span class="border border-secondary rounded-top h-100 d-inline-block">
     <img [src]= "recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive" style="width: 100%">
-    <h4>{{ recipe.name }}</h4>
-    <p>{{ recipe.description }}</p>
+    <h3 class="pl-3 pt-2 font-weight-bold text-secondary font-italic text-uppercase">{{ recipe.name }}</h3>
+    <p class="pl-3 text-dark">{{ recipe.description }}</p>
+  </span>
 </div>
