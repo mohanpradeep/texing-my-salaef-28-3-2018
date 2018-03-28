@@ -1,0 +1,5 @@
+
+
+<div class="w-100 card">
+  <app-recipe-item class="list-group list-group-flush" *ngFor="let newrecipe of recipe" [recipe]="newrecipe" (exportrecipe)="ursting(newrecipe)"></app-recipe-item>
+</div>
